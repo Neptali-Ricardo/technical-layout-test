@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html {
+  font-size: var(--font-size-s); /* 16px */
+}
+
+body {
+  font-family: var(--font-family); /* Using the font-family variable */
+  font-size: var(--font-size-s); /* Base font size */
+  line-height: var(--line-height-m); /* Line height for readability */
+  color: var(--color-neutral-black); /* Base text color */
+  background-color: var(--color-neutral-white); /* Background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Typography styles */
+
+/* Common styles for all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family); /* Use the defined font-family */
+  font-weight: var(--font-weight-bold); /* Bold font for headings */
+  color: var(--color-primary-amethyst-400); /* Set heading text color */
+  margin: 0 0 0.5rem; /* Add margin below headings */
+}
+
+/* Specific styles for each heading */
+h1 {
+  font-size: var(--font-size-xl); /* Large font size */
+  line-height: var(--line-height-xl); /* Line height for better readability */
+  text-align: center; /* Center the heading */
+}
+
+h2 {
+  font-size: var(--font-size-m); /* Medium font size */
+  line-height: var(--line-height-l); /* Line height */
+  text-align: center; /* Center the heading */
+}
+
+h3 {
+  font-size: 1.75rem; /* Adjusted size not defined by variable */
+}
+
+h4 {
+  font-size: 1.5rem; /* Smaller font size */
+}
+
+h5 {
+  font-size: 1.25rem; /* Smaller font size */
+}
+
+h6 {
+  font-size: var(--font-size-s); /* Smallest font size */
+}
+
+/* Paragraph styles */
+p {
+  font-size: var(--font-size-s); /* Use the small font size for paragraphs */
+  font-weight: var(--font-weight-regular); /* Regular font weight for paragraphs */
+  line-height: var(--line-height-s); /* Line height based on variable */
+  text-align: center; /* Center text */
+  margin: 0 0 1rem; /* Add margin below paragraphs */
+}
+
+/* Link styles */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: var(--color-primary-amethyst-400); /* Primary color for links */
+  transition: color 0.3s ease; /* Smooth transition for color change on hover */
+}
+
+a:hover,
+a:focus {
+  color: var(--color-neutral-gray-800); /* Change color on hover/focus */
+  outline: none; /* Remove default focus outline */
+  text-decoration: underline; /* Underline on hover for better accessibility */
+}
+
+/* List styles */
+ul,
+ol {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove bullets/numbers */
+}
+
+/* Spacing within list items */
+ul li,
+ol li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+.prueba{
+  color: var(--color-primary-amethyst-400);
+}

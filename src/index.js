@@ -1,7 +1,7 @@
-// Importa los estilos CSS
-import './scss/main.scss'; // Asegúrate de que la ruta sea correcta
+// Import CSS styles
+import './scss/main.scss'; // Make sure the path is correct
 
-// Agregar alguna lógica o interacción en JavaScript si es necesario
-console.log("El archivo index.js ha sido cargado correctamente");
+// Add some logic or interaction in JavaScript if needed
+console.log("The index.js file has been loaded successfully");
 
-// Aquí puedes agregar más código JavaScript si es necesario
+// You can add more JavaScript code here if necessary

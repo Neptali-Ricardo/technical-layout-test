@@ -1,20 +1,20 @@
-// Importar abstractos
-@use 'abstracts/variables';  // Variables globales
-@use 'abstracts/mixins';     // Mixins reutilizables
+// Import abstracts
+@use 'abstracts/variables';  // Global variables
+@use 'abstracts/mixins';     // Reusable mixins
 
-// Estilos base
-@use 'base/reset';           // Reseteo de estilos
-@use 'base/typography';      // Tipografía base
+// Base styles
+@use 'base/reset';           // Reset styles
+@use 'base/typography';      // Base typography
 
-// Componentes
-@use 'components/header';    // Estilos para el header
-@use 'components/banner';    // Estilos para el banner
-@use 'components/footer';    // Estilos para el footer
-@use 'components/cards';     // Estilos para las cards
-@use 'components/buttons';   // Estilos para los botones
+// Components
+@use 'components/header';    // Header styles
+@use 'components/banner';    // Banner styles
+@use 'components/footer';    // Footer styles
+@use 'components/cards';     // Card styles
+@use 'components/buttons';   // Button styles
 
 // Layouts
-@use 'layouts/grid';         // Sistema de grillas
+@use 'layouts/grid';         // Grid system
 
-// Páginas
-@use 'pages/home';           // Estilos específicos de la página de inicio
+// Pages
+@use 'pages/home';           // Home page specific styles
