@@ -111,7 +111,7 @@ footer.footer {
     margin: 0;
 }
 
-/* Estilos para el contenedor del separador e iconos */
+/* Styles for the separator container and icons */
 .footer__hr-svg {
     display: flex;
     align-items: center;
@@ -119,15 +119,36 @@ footer.footer {
     width: 100%;
 }
 
-/* Estilo para las líneas de separación */
+/* Style for the separator lines */
 .footer__hr-style {
-    flex-grow: 1; /* Permite que las líneas crezcan para llenar el contenedor */
+    flex-grow: 1; /* Allows the lines to grow to fill the container */
     height: 0.0625rem; /* 1px */
     background-color: var(--color-neutral-gray-50);
-    border: none; /* Evita bordes adicionales */
+    border: none; /* Avoids additional borders */
 }
 
-/* Estilo para el icono centrado y no afectado por el crecimiento de las líneas */
+/* Style for the centered icon, unaffected by the growth of the lines */
+.footer__centered-svg {
+    width: 2.5rem; /* 40px */
+    height: 1.5rem; /* 24px */
+    margin: 0 0.5rem; /* 8px */
+}
+.footer__hr-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Style for the separator lines */
+.footer__hr-style {
+    flex-grow: 1; /* Allows the lines to grow to fill the container */
+    height: 0.0625rem; /* 1px */
+    background-color: var(--color-neutral-gray-50);
+    border: none; /* Avoids additional borders */
+}
+
+/* Style for the centered icon, unaffected by the growth of the lines */
 .footer__centered-svg {
     width: 2.5rem; /* 40px */
     height: 1.5rem; /* 24px */
@@ -150,26 +171,26 @@ footer.footer {
 
 /* Responsive Styles */
 @media (max-width: 360px) {
-    /* Para pantallas extra pequeñas */
+    /* For extra small screens */
     .footer__content {
         gap: 1.125rem; /* 18px */
     }
     .footer__top {
         gap: 1.5rem; /* 24px */
         display: flex;
-        flex-direction: column; /* Ajusta el contenido a una sola columna */ 
+        flex-direction: column; /* Adjust content to a single column */ 
     }
     .footer__text {
-        font-size: var(--font-size-xs); /* Reduce el tamaño de fuente */
+        font-size: var(--font-size-xs); /* Reduce font size */
     }
     .footer__links {
         display: flex;
-        flex-direction: column; /* Ajusta el contenido a una sola columna */
+        flex-direction: column; /* Adjust content to a single column */
         gap: 1.5rem; /* 24px */
     }
     .footer__logo {
-        display: flex; /* Ajusta el contenido a una sola columna */
-        justify-content: center; /* Centra el contenido */
+        display: flex; /* Adjust content to a single column */
+        justify-content: center; /* Center the content */
     }
     .footer__bottom {
         display: flex;
@@ -177,9 +198,9 @@ footer.footer {
         gap: 1rem; /* 16px */
     }
     .footer__bottom-left p {
-        text-align: left; /* Ajusta el texto a la izquierda */
+        text-align: left; /* Align text to the left */
     }
     .footer__bottom-left p, .footer__bottom-right {
-        font-size: var(--font-size-xs); /* Reduce tamaño de texto */
+        font-size: var(--font-size-xs); /* Reduce text size */
     }
 }
