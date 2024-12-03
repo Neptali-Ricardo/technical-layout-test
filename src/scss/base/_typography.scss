@@ -69,16 +69,9 @@ p {
 
 /* Link styles */
 a {
-  text-decoration: none; /* Remove default underline */
-  color: var(--color-primary-amethyst-400); /* Primary color for links */
-  transition: color 0.3s ease; /* Smooth transition for color change on hover */
-}
-
-a:hover,
-a:focus {
-  color: var(--color-neutral-gray-800); /* Change color on hover/focus */
-  outline: none; /* Remove default focus outline */
-  text-decoration: underline; /* Underline on hover for better accessibility */
+  text-decoration: none;
+  color: var(--color-primary-amethyst-400);
+  transition: color 0.3s ease;
 }
 
 /* List styles */
