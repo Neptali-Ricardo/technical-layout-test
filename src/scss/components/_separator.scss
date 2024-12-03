@@ -1,0 +1,19 @@
+// Mixin for separator line
+@mixin separator-line {
+    flex-grow: 1;
+    height: 0.0625rem;
+    background-color: var(--color-neutral-white);
+    border: none;
+}
+
+// Separator styles
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.separator__line {
+    @include separator-line;
+}
