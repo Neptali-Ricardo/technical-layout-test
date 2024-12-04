@@ -1,6 +1,6 @@
 # Technical Layout Test
 
-Este proyecto es una aplicación web que utiliza JavaScript, SCSS y Webpack para ofrecer una interfaz moderna y funcional. Está diseñado para facilitar el desarrollo en un entorno modular y escalable.
+Este proyecto es una aplicación web que utiliza JavaScript, HTML, SCSS y Webpack para ofrecer una interfaz moderna y funcional. Está diseñado para facilitar el desarrollo en un entorno modular y escalable.
 
 ## Requisitos
 
@@ -39,12 +39,7 @@ Para ejecutar el proyecto en un entorno de desarrollo, utiliza el siguiente coma
 
 Con npm:
 ```bash
-npm run start
-```
-
-Con yarn:
-```bash
-yarn start
+npm run dev
 ```
 
 Esto iniciará un servidor de desarrollo y abrirá la aplicación en tu navegador predeterminado.
@@ -78,6 +73,26 @@ Esto generará los archivos compilados en la carpeta `dist`.
   - `bundle.js`: Archivo de JavaScript compilado.
   - `index.html`: Archivo HTML de salida.
 - `webpack.config.js`: Archivo de configuración de Webpack.
+
+
+### Observaciones:
+1. Instrucciones de Ejecución:
+   - Asegúrate de que el comando `npm run dev` esté correctamente configurado en tu archivo `package.json` bajo la sección `scripts`.
+   - Verifica que el servidor de desarrollo esté configurado para abrir automáticamente la aplicación en el navegador.
+
+2. Instrucciones de Compilación:
+   - Asegúrate de que el comando `npm run build` esté correctamente configurado en tu archivo `package.json` bajo la sección `scripts`.
+   - Verifica que el comando `yarn build` sea equivalente a `npm run build` y esté correctamente configurado si estás usando Yarn.
+
+### Ejemplo de configuración en `package.json`:
+
+```json
+{
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  }
+}
 
 ## Contribución
 
