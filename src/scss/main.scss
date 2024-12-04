@@ -1,0 +1,18 @@
+// Import abstracts
+@use './abstracts/variables' as *; // Global variables
+
+// Base styles
+@use 'base/reset';           // Reset styles
+@use 'base/typography';      // Base typography
+
+// Components
+@use 'components/header';    // Header styles
+@use 'components/banner';    // Banner styles
+@use 'components/footer';    // Footer styles
+@use 'components/cards';     // Card styles
+@use 'components/buttons';   // Button styles
+@use 'components/separator'; // Separator styles
+@use 'components/form';      // Form styles
+
+
+

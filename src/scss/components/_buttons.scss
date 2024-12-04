@@ -1,0 +1,29 @@
+@mixin button-styles($background-color, $text-color) {
+    display: flex;
+    justify-content: center;
+    padding: var(--button-padding); 
+    gap: var(--button-inner-gap);
+    border-radius: var(--button-border-radius);
+    background: $background-color;
+    font-family: var(--button-font-family); 
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--button-line-height);
+    text-align: center;
+    color: $text-color;
+    border: none;
+    cursor: pointer;
+}
+
+.button--primary {
+    @include button-styles(var(--color-primary-amethyst-400), var(--color-neutral-white));
+}
+
+.button--secondary {
+    @include button-styles(var(--color-neutral-gray-50), var(--colors-neutral-white));
+}
+
+.customer {
+    padding: 0.5rem;
+    width: 100%;
+}

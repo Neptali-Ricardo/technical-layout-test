@@ -1,0 +1,79 @@
+/* Definition of CSS Variables */
+:root {
+    /* Colors */
+    --color-primary-amethyst-400: #8A42FB;
+    --color-neutral-gray-50: #F3F3F3;
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-black: #000000;
+    --color-neutral-gray-800: #343434;
+
+    /* Shadow */
+    --card-box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
+
+    /* Buttons */
+    --button-border-radius: 8px; /* 5px */
+    --button-font-family: 'Open Sans', sans-serif;
+    --button-font-size: 1rem; /* 16px */
+    --button-line-height: 1.5rem; /* 24px */
+    --button-padding: 1rem; /* 16px */
+    --button-inner-gap: 0.5rem; /* 8px */
+    --button-card-gap: 1rem; /* 16px */
+    --button-gap: 0.5rem; /* 8px */
+
+    /* Containers */
+    --container-inner-width: 84rem; /* 1344px */
+
+    /* Typography */
+    --font-family: 'Open Sans', sans-serif;
+    --font-size-xs: 0.875rem; /* 14px */
+    --font-size-s: 1rem; /* 16px */
+    --font-size-m: 1.9375rem; /* 31px */
+    --font-size-l: 2.8125rem; /* 45px */
+    --font-size-xl: 3.8125rem; /* 61px */
+    --line-height-s: 1.4rem; /* 22.4px */
+    --line-height-m: 1.5rem; /* 24px */
+    --line-height-l: 2.7rem; /* 43.2px */
+    --line-height-xl: 4.575rem; /* 73.2px */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+/* SCSS Variables */
+$container-inner-width: 84rem; // 1344px
+$gap-large: 2rem;
+$gap-medium: 1.5rem;
+$gap-small: 1rem;
+$gap-xsmall: 0.5rem;
+
+/* Colors */
+$color-neutral-white: #FFFFFF;
+$color-neutral-gray-50: #F3F3F3;
+$color-neutral-gray-800: #343434;
+
+/* Typography */
+$font-size-xs: 0.875rem; // 14px
+$font-size-s: 1rem; // 16px
+$font-size-large: 1.5rem;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$line-height-s: 1.4rem; // 22.4px
+$line-height-large: 1.8rem;
+
+/* Shadow */
+$card-box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
+
+/* Buttons */
+$button-card-gap: 1rem; // 16px
+
+/* Breakpoints */
+$breakpoint-small: 26.875rem; // 430px
+
+/* Additional Variables */
+$font-family: "Open Sans", sans-serif;
+$font-size: 1rem;
+$font-weight: 600;
+$line-height: 1.5rem;
+$transition-duration: 0.3s;
+$gap: 1.5rem;

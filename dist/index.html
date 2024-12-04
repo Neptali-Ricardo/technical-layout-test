@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>technical-layout-test</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <!-- Menú de navegación para pantallas grandes -->
+            <div class="header__logo">
+                <a href="#" aria-label="Inicio">
+                    <img src="assets/icons/LogoBox.svg" alt="Imagen de la empresa"/>
+                </a>
+            </div>
+            <button class="header__solid-bars" onclick="toggleMenu()" aria-expanded="false" aria-controls="navigation-menu">
+                <img src="assets/icons/solid-bars.svg" alt="Abrir menú" aria-label="Abrir menú"/>
+            </button>
+            <nav class="header__navigation" id="navigation-menu" aria-label="Navegación principal">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-item">
+                        <a class="header__navigation-link" href="#" aria-label="Inicio">Inicio</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a class="header__navigation-link" href="#" aria-label="Nosotros">Nosotros</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a class="header__navigation-link" href="#" aria-label="Viajes">Viajes</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a class="header__navigation-link" href="#" aria-label="Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="header__menu" id="header__menu">
+        <div class="menu-container">
+
+            <!-- Menú para pantallas pequeñas -->
+            <div class="header__menu-container">
+                <div class="header__menu-logo">
+                    <a href="#" aria-label="Inicio">
+                        <img src="assets/icons/ManifestMainLogo.svg" alt="Imagen de la empresa" />
+                    </a>
+                </div>
+                <button class="header__menu-solid-bars" onclick="toggleMenu()" aria-expanded="false" aria-controls="navigation-menu">
+                    <img src="assets/icons/solid-xmark-large.svg" alt="Cerrar menú" aria-label="Cerrar menú" />
+                </button>
+            </div>
+
+            <!-- Menú desplegable para pantallas pequeñas -->
+            <nav class="header__menu-navigation" id="navigation-menu" aria-label="Navegación principal">
+                <ul class="header__menu-navigation-list">
+                    <li class="header__menu-navigation-item">
+                        <a class="header__menu-navigation-link" href="#" aria-label="Inicio">Inicio</a>
+                    </li>
+                    <li class="header__menu-navigation-item">
+                        <a class="header__menu-navigation-link" href="#" aria-label="Nosotros">Nosotros</a>
+                    </li>
+                    <li class="header__menu-navigation-item">
+                        <a class="header__menu-navigation-link" href="#" aria-label="Viajes">Viajes</a>
+                    </li>
+                    <li class="header__menu-navigation-item">
+                        <a class="header__menu-navigation-link" href="#" aria-label="Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" aria-labelledby="banner__title">
+        <!-- Contenedor de imagen y capa oscura -->
+        <div class="banner__image-container">
+            <img src="assets/images/banner.jpg" alt="Fondo del banner mostrando un paisaje" class="banner__image">
+            <div class="banner__overlay" aria-hidden="true"></div>
+        </div>
+
+        <!-- Contenido del banner -->
+        <div class="banner__content">
+            <h1 id="banner__title" class="banner__title">Explora el mundo: Tu guía de viajes perfecta</h1>
+            
+            <!-- Separador estilizado con icono -->
+            <div class="separator" role="presentation" aria-hidden="true">
+                <hr class="separator__line">
+                <img src="assets/icons/circle-user.svg" alt="" aria-hidden="true"/>
+                <hr class="separator__line">
+            </div>
+
+            <!-- Texto descriptivo -->
+            <h2 class="banner__subtitle">Explora destinos increíbles y vive aventuras inolvidables.</h2>
+            <p class="banner__description">Ofrecemos una amplia gama de destinos, desde playas paradisíacas hasta montañas majestuosas, para que encuentres el lugar perfecto para tu próxima escapada.</p>
+
+            <!-- Botón de acción -->
+            <a href="#" class="button--primary" aria-label="Descubre más sobre nuestros destinos">
+                Descubre
+                <img src="assets/icons/RightIcon.svg" alt="" aria-hidden="true"/>
+            </a>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="content-cards" aria-labelledby="content-cards__title">
+        <header class="content-cards__title">
+            <h2 id="content-cards__title" class="content-cards__subtitle">Lorem ipsum dolor sit</h2>
+            <p class="content-cards__description">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+        </header>
+        <div class="card-customize">
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-1.png" alt="Imagen de la empresa" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descriptive caption for the image</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-2.png" alt="Descripción de la imagen" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descriptive caption for the image</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-3.png" alt="Imagen de la empresa" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descripción de la imagen</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-4.png" alt="Descripción de la imagen" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descriptive caption for the image</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-5.png" alt="Imagen de la empresa" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descripción de la imagen</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-6.png" alt="Imagen de la empresa" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descripción de la imagen</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-7.png" alt="Imagen de la empresa" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descripción de la imagen</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card" aria-labelledby="card-title">
+                    <!-- Imagen con ícono -->
+                    <figure class="card__image-wrapper">
+                        <img class="card__image" src="assets/images/ImgHolder-8.png" alt="Imagen de la empresa" />
+                        <figcaption class="figure__caption figure__caption--hidden">Descripción de la imagen</figcaption>
+                        <button class="card__like-button" aria-label="Me gusta">
+                            <img class="card__like-icon" src="assets/icons/heart.svg" alt="" aria-hidden="true"/>
+                        </button>
+                    </figure>
+
+                    <!-- Contenido de texto -->
+                    <div class="card__content">
+                        <div class="card__chips">
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                            <span class="chip">TextChip</span>
+                        </div>
+
+                        <time class="card__date" datetime="2024-12-01">10/05/2022</time>
+                        <h2 id="card-title" class="card__title">Sed donec blandit amet fames morbi donec tincidunt.</h2>
+                        <p class="card__description">
+                            Velit non id lacus eros montes. Arcu quis facilisis ut sed tempor vitae non adipiscing. Quam quis arcu ac in vulputate diam at tellus urna.
+                        </p>
+                        <div class="card__price">
+                            <span class="card__price-label">Desde</span>
+                            <span class="card__price-value">€2.031</span>
+                        </div>
+                        <!-- Botones de acción -->
+                        <div class="card__actions">
+                            <button class="customer button--secondary">Call to Action</button>
+                            <button class="customer button--primary">Call to Action</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de formulario -->
+    <section class="contact-form" aria-labelledby="contact-form__title">
+        <header class="contact-form__header">
+            <h2 id="contact-form__title" class="contact-form__title">Contáctanos</h2>
+            <p class="contact-form__description">
+                ¡Contáctanos! Estamos aquí para ayudarte con cualquier consulta que tengas.
+                No dudes en escribirnos y te responderemos lo más pronto posible.
+            </p>
+        </header>
+    
+        <div class="contact-form__content">
+            <figure class="contact-form__image">
+                <img class="contact-form__img" src="assets/images/form-image.png" alt="Imagen de la empresa" aria-label="Descripción de la imagen" aria-hidden="true"/>
+            </figure>
+            <form class="contact-form__form" type="submit" action="#" method="post" novalidate>
+                <div class="contact-form__group contact-form__group--two-cols">
+                    <div class="contact-form__field">
+                        <label for="name" class="contact-form__label">Nombre</label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="contact-form__input" 
+                        placeholder="Nombre" 
+                        required 
+                        aria-required="true" 
+                        />
+                    </div>
+                    <div class="contact-form__field">
+                        <label for="lname" class="contact-form__label">Apellidos</label>
+                        <input 
+                        type="text" 
+                        id="lname" 
+                        name="lname" 
+                        class="contact-form__input" 
+                        placeholder="Apellidos" 
+                        required 
+                        aria-required="true" 
+                        />
+                    </div>
+                </div>
+                <div class="contact-form__field">
+                    <label for="email" class="contact-form__label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="contact-form__input" 
+                        placeholder="Email" 
+                        required 
+                        aria-required="true" 
+                    />
+                </div>
+                <div class="contact-form__field">
+                    <label for="message" class="contact-form__label">Mensaje</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        class="contact-form__textarea" 
+                        placeholder="Mensaje" 
+                        required 
+                        aria-required="true"
+                        rows="3"
+                    ></textarea>
+                </div>
+                <div class="contact-form__actions">
+                    <div class="contact-form__checkbox-group">
+                        <input 
+                        type="checkbox" 
+                        id="terms" 
+                        name="terms" 
+                        class="contact-form__checkbox" 
+                        required 
+                        aria-required="true" 
+                        />
+                        <label for="terms" class="contact-form__checkbox-label">
+                        Acepto los 
+                        <a href="#" class="contact-form__checkbox-label-link">Términos y condiciones</a>
+                        </label>
+                    </div>
+                    <button disabled type="submit" class="contact-form__button button--primary">
+                        <img class="contact-form__img" src="assets/icons/bold-paper-plane.svg" alt="Imagen de la empresa" aria-label="Descripción de la imagen" aria-hidden="true"/>
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__content">
+            
+            <!-- Logo del footer -->
+            <div class="footer__logo" aria-label="Logo principal del sitio">
+                <img class="footer__logo-icon" src="assets/icons/ManifestLogo.svg" alt="Imagen de la empresa" aria-label="Descripción de la imagen" aria-hidden="true"/>
+            </div>
+    
+            <!-- Contenido superior del footer -->
+            <div class="footer__top">
+                <!-- Texto informativo del footer -->
+                <section class="footer__text" aria-labelledby="footer-info">
+                    <p id="footer-info">
+                        Cursus pretium a vel neque gravida eros mauris aliquam senectus. Cum volutpat arcu fames maecenas tortor ac. 
+                        Suspendisse quis in duis curabitur sit sed porttitor a. Nec aliquet enim at enim tincidunt eget sed gravida.
+                        Egestas fermentum urna sed etiam aliquam.
+                    </p>
+                </section>
+    
+                <!-- Enlaces e íconos del footer -->
+                <section class="footer__links">
+                    <nav class="footer__nav" aria-label="Enlaces de interés">
+
+                        <ul class="footer__columns">
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <nav class="footer__nav" aria-label="Enlaces de interés">
+                        <ul class="footer__columns">
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__nav" aria-label="Enlaces de interés">
+                        <ul class="footer__columns">
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__link">
+                                    <img class="footer__icon" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"/>
+                                    <span class="footer__link-text">Lorem ipsum dolor</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+    
+            <!-- Separador estilizado con icono -->
+            <div class="separator" role="presentation" aria-hidden="true">
+                <hr class="separator__line" aria-hidden="true">
+                <img src="assets/icons/circle-user.svg" alt="Imagen de la empresa" aria-hidden="true"/>
+                <hr class="separator__line" aria-hidden="true">
+            </div>
+
+            <!-- Footer inferior -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <p>&copy; 2024 Manifests</p>
+                </div>
+                <div class="footer__bottom-right">
+                    <a href="#" class="footer__icon" aria-label="Enlace a Enorth Safaris">
+                        <img src="assets/icons/enorth-safaris.svg" alt="" aria-hidden="true"/>
+                    </a>
+                    <a href="#" class="footer__icon" aria-label="Enlace a Newblue">
+                        <img src="assets/icons/newblue.svg" alt="" aria-hidden="true"/>
+                    </a>
+                    <a href="#" class="footer__icon" aria-label="Enlace a 07 Hotels">
+                        <img src="assets/icons/o7-hotels.svg" alt="" aria-hidden="true"/>
+                    </a>
+                    <a href="#" class="footer__icon" aria-label="Enlace a Enorth Safaris">
+                        <img src="assets/icons/enorth-safaris.svg" alt="" aria-hidden="true"/>
+                    </a>
+                    <a href="#" class="footer__icon" aria-label="Enlace a Newblue">
+                        <img src="assets/icons/newblue.svg" alt="" aria-hidden="true"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const header = document.querySelector('#header');
+            const menu = document.querySelector('#header__menu');
+
+            if (header.style.display === 'none') {
+                header.style.display = 'block';
+                menu.style.display = 'none';
+            } else {
+                header.style.display = 'none';
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
