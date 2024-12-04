@@ -13,11 +13,6 @@
     color: $text-color;
     border: none;
     cursor: pointer;
-
-    .card {
-        padding: 0.5rem !important; // Override the padding of the card
-        width: 100%;
-    }
 }
 
 .button--primary {
@@ -26,4 +21,9 @@
 
 .button--secondary {
     @include button-styles(var(--color-neutral-gray-50), var(--colors-neutral-white));
+}
+
+.customer {
+    padding: 0.5rem;
+    width: 100%;
 }

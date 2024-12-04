@@ -1,0 +1,190 @@
+// Variables
+$gap-large: 2rem;
+$gap-medium: 1.5rem;
+$gap-small: 1rem;
+$gap-xsmall: 0.5rem;
+$color-neutral-white: var(--color-neutral-white);
+$color-neutral-gray-50: var(--color-neutral-gray-50);
+$color-neutral-gray-800: var(--color-neutral-gray-800);
+$font-size-xs: var(--font-size-xs);
+$font-size-s: var(--font-size-s);
+$font-weight-regular: var(--font-weight-regular);
+$font-weight-bold: var(--font-weight-bold);
+$line-height-s: var(--line-height-s);
+$card-box-shadow: var(--card-box-shadow);
+$container-inner-width: var(--container-inner-width);
+$button-card-gap: var(--button-card-gap);
+
+// Mixin for flex container
+@mixin flex-container($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+// Content cards
+.content-cards {
+    max-width: $container-inner-width;
+    margin: 5rem auto;
+    @include flex-container(column, nowrap, flex-start, stretch, $gap-large);
+}
+
+.content-cards__title {
+    @include flex-container(column, nowrap, flex-start, stretch, $gap-small);
+    max-width: 41.25rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-cards__subtitle,
+.content-cards__description {
+    margin: 0;
+}
+
+// Card customize
+.card-customize {
+    @include flex-container(row, wrap, flex-start, stretch, $gap-medium);
+}
+
+// Cards
+.cards {
+    @include flex-container(row, wrap, space-between, stretch, $gap-medium);
+}
+
+// Card
+.card {
+    background-color: $color-neutral-white;
+    box-shadow: $card-box-shadow;
+    overflow: hidden;
+    height: auto;
+    max-width: 19.875rem;
+
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: 14.90625rem;
+        object-fit: cover;
+    }
+
+    &__like-button {
+        width: 2rem;
+        height: 2rem;
+        padding: 0.25rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: $color-neutral-white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        @include flex-container(center, nowrap, center, center);
+    }
+
+    &__like-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &__content {
+        padding: 1rem;
+        text-align: left;
+        @include flex-container(column, nowrap, flex-start, stretch, $gap-small);
+    }
+
+    &__chips {
+        @include flex-container(row, nowrap, flex-start, stretch, $gap-xsmall);
+    }
+
+    &__date {
+        color: $color-neutral-gray-800;
+        font-size: $font-size-xs;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        text-align: left;
+        color: $color-neutral-gray-800;
+        margin: 0;
+    }
+
+    &__description {
+        font-size: $font-size-xs;
+        margin: 0;
+        text-align: left;
+    }
+
+    &__price {
+        @include flex-container(row, nowrap, space-between, center);
+        margin: 0;
+
+        &-label {
+            font-size: $font-size-s;
+            font-weight: $font-weight-regular;
+            line-height: $line-height-s;
+        }
+
+        &-value {
+            font-weight: $font-weight-bold;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+
+    &__actions {
+        @include flex-container(row, nowrap, space-between, stretch, $button-card-gap);
+    }
+}
+
+.figure__caption--hidden {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    padding: 0;
+    margin: -0.0625rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.chip {
+    background: $color-neutral-gray-50;
+    border-radius: 3rem;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: $font-weight-regular;
+    line-height: 1rem;
+}
+
+@media (max-width: 26.875rem) { /* 430px */
+    .content-cards {
+        margin: 4rem 0;
+    }
+
+    .content-cards__title {
+        padding: 0 1.5rem;
+    }
+    
+    .content-cards__subtitle {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: left;
+    }
+
+    .content-cards__description {
+        text-align: left;
+    }
+
+    .card-customize {
+        flex-direction: column;
+        align-items: center;
+    }
+}

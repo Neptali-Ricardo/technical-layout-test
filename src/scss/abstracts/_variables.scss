@@ -1,10 +1,7 @@
 /* Definition of CSS Variables */
 :root {
     /* Colors */
-    /* Primary Colors */
     --color-primary-amethyst-400: #8A42FB;
-
-    /* Neutral Colors */
     --color-neutral-gray-50: #F3F3F3;
     --color-neutral-white: #FFFFFF;
     --color-neutral-black: #000000;
@@ -20,6 +17,7 @@
     --button-line-height: 1.5rem; /* 24px */
     --button-padding: 1rem; /* 16px */
     --button-inner-gap: 0.5rem; /* 8px */
+    --button-card-gap: 1rem; /* 16px */
     --button-gap: 0.5rem; /* 8px */
 
     /* Containers */
@@ -27,23 +25,49 @@
 
     /* Typography */
     --font-family: 'Open Sans', sans-serif;
-
-    /* Font Sizes */
     --font-size-xs: 0.875rem; /* 14px */
     --font-size-s: 1rem; /* 16px */
     --font-size-m: 1.9375rem; /* 31px */
     --font-size-l: 2.8125rem; /* 45px */
     --font-size-xl: 3.8125rem; /* 61px */
-
-    /* Line Heights */
     --line-height-s: 1.4rem; /* 22.4px */
     --line-height-m: 1.5rem; /* 24px */
     --line-height-l: 2.7rem; /* 43.2px */
     --line-height-xl: 4.575rem; /* 73.2px */
-
-    /* Font Weights */
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 }
+
+// Variables
+$gap-large: 2rem;
+$gap-medium: 1.5rem;
+$gap-small: 1rem;
+$gap-xsmall: 0.5rem;
+
+/* Colors */
+$color-neutral-white: var(--color-neutral-white);
+$color-neutral-gray-50: var(--color-neutral-gray-50);
+$color-neutral-gray-800: var(--color-neutral-gray-800);
+
+/* Typography */
+$font-size-xs: var(--font-size-xs);
+$font-size-s: var(--font-size-s);
+$font-size-large: 1.5rem;
+$font-weight-regular: var(--font-weight-regular);
+$font-weight-bold: var(--font-weight-bold);
+$line-height-s: var(--line-height-s);
+$line-height-large: 1.8rem;
+
+/* Shadow */
+$card-box-shadow: var(--card-box-shadow);
+
+/* Containers */
+$container-inner-width: var(--container-inner-width);
+
+/* Buttons */
+$button-card-gap: var(--button-card-gap);
+
+/* Breakpoints */
+$breakpoint-small: 26.875rem; // 430px
