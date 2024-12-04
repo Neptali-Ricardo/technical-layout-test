@@ -1,5 +1,7 @@
 // Import abstracts
-@use 'abstracts/variables';  // Global variables
+@use './abstracts/variables' as *; // Global variables
+
+
 @use 'abstracts/mixins';     // Reusable mixins
 
 // Base styles

@@ -15,7 +15,12 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,  // Extrae el CSS a un archivo
           'css-loader',  // Permite importar CSS en JS
-          'sass-loader', // Compila Sass a CSS
+          {
+            loader: 'sass-loader', // Compila Sass a CSS
+            options: {
+              implementation: require('sass'), // Usa Dart Sass en lugar de node-sass
+            },
+          },
         ],
       },
     ],
