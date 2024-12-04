@@ -40,7 +40,7 @@
     --font-weight-bold: 700;
 }
 
-// SCSS Variables
+/* SCSS Variables */
 $container-inner-width: 84rem; // 1344px
 $gap-large: 2rem;
 $gap-medium: 1.5rem;
@@ -69,3 +69,11 @@ $button-card-gap: 1rem; // 16px
 
 /* Breakpoints */
 $breakpoint-small: 26.875rem; // 430px
+
+/* Additional Variables */
+$font-family: "Open Sans", sans-serif;
+$font-size: 1rem;
+$font-weight: 600;
+$line-height: 1.5rem;
+$transition-duration: 0.3s;
+$gap: 1.5rem;
